@@ -1,0 +1,32 @@
+<div  class="chartBuilder container">
+  <div class="row builder-content">
+     <div class="content-builder">
+
+      <div class="chart-navigation">
+        <ul class="charts-menu">
+          <li class="nav-item tab-item" ng-class="{ active: vm.isSet(1) }">
+            <i class="fa fa-bar-chart" aria-hidden="true"></i>
+             <a class="nav-link" ng-click="vm.setTab(1)">
+               Bar Chart
+             </a>
+          </li>
+
+              <li class="nav-item tab-item" ng-class="{ active: vm.isSet(2) }">
+                <i class="fa fa-pie-chart" aria-hidden="true"></i>
+                  <a class="nav-link" ng-click="vm.setTab(2)">
+                    Pie Chart
+                   </a>
+              </li>
+          </ul><!--charts-menu-->
+        </div><!--chart-navigation-->
+
+        <div class="bar-chart-builder builder-view"  ng-show="vm.isSet(1)">
+          <bar-chart></bar-chart>
+        </div>
+
+        <div class="pie-chart-builder builder-view" ng-show="vm.isSet(2)">
+          <pie-chart></pie-chart>
+        </div>
+      </div><!--content-builder-->
+    </div><!--builder-content-->
+  </div><!--chartBuilder-->

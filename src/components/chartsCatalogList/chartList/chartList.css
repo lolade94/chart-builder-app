@@ -1,0 +1,64 @@
+.chart-list-wrapper md-list{
+  cursor: pointer;
+}
+.chart-list-wrapper md-list
+md-list-item.md-3-line .md-list-item-text h4{
+  color:#ccc;
+}
+.chart-list-wrapper md-list
+md-list-item.md-3-line .md-list-item-text h3{
+  color:#ccc;
+}
+
+.chart-list-wrapper md-list
+md-list-item.md-3-line .md-list-item-text p{
+  color:#ccc;
+}
+.chart-list-wrapper md-list
+md-list-item:hover{
+  background: #31373f;
+}
+.chart-list-wrapper md-list-item.md-3-line{
+  background: #20242A;
+  border-bottom: .75px solid grey;
+}
+.chartsFilter{
+  border-right:.75px solid grey;
+  margin-right: 30px;
+}
+.chartFilterList{
+  padding: 30px 0;
+}
+.chartFilterList p{
+  padding:5px 0;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.chartFilterList p:hover{
+  color: #70E4EF;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.chartFilterList p.active{
+     color: #70E4EF;
+     font-weight: 700;
+     cursor: pointer;
+}
+.chart-list-wrapper .md-subheader.md-default-theme.md-primary,
+ .md-subheader.md-primary {
+    color: #fff;
+}
+.chart-list-wrapper md-list .md-subheader {
+    font-weight: 600;
+}
+
+.chart-list-wrapper .md-subheader{
+  background: #31373f;
+  border-bottom: .5px solid grey;
+}
+.chart-list-wrapper md-list-item.md-no-proxy{
+  flex:none;
+  -webkit-flex: none;
+}

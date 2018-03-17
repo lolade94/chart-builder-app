@@ -1,0 +1,570 @@
+/******** Table of Contents:
+	1.  Global General Styles
+  2.  Navbar
+  3.  Buttons
+  4.  Typography
+  5.  Tables
+  6.  Accordion
+  7.  Forms
+  8.  Navs
+  9.  Indicators
+  10. Containers
+  11. Dialogs
+  12. Layout
+***************************/
+
+
+/* GLOBAL STYLES FOR COMPONENTS */
+/*--------------------------------*/
+/*   1. Global General Styles     */
+/*--------------------------------*/
+body {
+  color: #333333;
+  font-family: 'open_sansregular';
+  font-size: 16px;
+}
+li {
+  font-family: 'tstarheavy', Arial, sans-serif;
+  color: #808080;
+}
+.header-bg {
+  margin-top: 0;
+  width: 100%;
+}
+
+
+/*      Classification Bar Header      */
+h6.classification {
+  position: fixed;
+  height: 27px;
+  background: #E8E8E8;
+  text-align: center;
+  font-family: 'tstarbold';
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #929497;
+  padding: 7px 5px 5px 5px;
+  margin: 0px;
+  z-index: 6001;
+  width: 100%;
+}
+div#class-header {
+  position: fixed;
+  top: -1px;
+  z-index: 6001;
+}
+
+
+/*      Classification Bar Footer      */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  background-color: #E0E0E0;
+  width: 100%;
+  font-family: 'tstarmedium';
+  font-size: 100%;
+  letter-spacing: 1px;
+  color: #6b6d6e;
+}
+div#class-footer {
+  position: fixed;
+  bottom: 27px;
+  z-index: 6001;
+}
+
+
+/*      Elements      */
+hr {
+  border: 0;
+	border-top: 1px dashed;
+  margin: 0;
+}
+
+
+
+/*--------------------------------*/
+/*      2. Navbar                 */
+/*--------------------------------*/
+.navbar-default {
+  font-family: 'tstarmedium';
+}
+.navbar-brand {
+  font-family: 'tstarbold';
+  font-size: 19px;
+}
+.dropdown-menu li a {
+  font-family: 'tstarbold';
+  font-size: 13px;
+}
+.navbar-form .form-control {
+  border: none;
+}
+
+
+
+/*--------------------------------*/
+/*      3. Buttons                */
+/*--------------------------------*/
+.btn-primary {
+  font-family: 'tstarbold';
+}
+.btn-sm {
+  font-size: 14px;
+}
+.btn-block {
+  font-family: 'tstarbold';
+  font-size: 19px;
+}
+
+
+.printBtn{
+  position: absolute;
+  right: 16px;
+  margin-top: 20px;
+  z-index: 999;
+}
+
+.printBtn>img{
+  width:32px
+}
+
+/*Hide print button on iPad*/
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)  {
+  .printBtn{
+    display: none;
+  }
+}
+
+/*--------------------------------*/
+/*      4. Typography             */
+/*--------------------------------*/
+
+/*    Font Families    */
+
+/*      Tstar     */
+.tstar-regular {
+  font-family: 'tstarregular';
+}
+.tstar-light {
+  font-family: 'tstarlight';
+}
+.tstar-light-italic {
+  font-family: 'tstarlight_italic';
+}
+.tstar-italic{
+  font-family: 'tstaritalic';
+}
+.tstar-medium {
+  font-family: 'tstarmedium';
+}
+.tstar-medium-italic {
+  font-family: 'tstarmedium_italic';
+}
+.tstar-bold {
+  font-family: 'tstarbold';
+}
+.tstar-bold-italic {
+  font-family: 'tstarbold_italic';
+}
+.tstar-heavy {
+  font-family: 'tstarheavy';
+}
+
+/*      Civita     */
+.civita-regular {
+  font-family: 'civita-regularregular';
+}
+.civita-extralight {
+  font-family: 'civitaextralight';
+}
+.civita-extralight-italic {
+  font-family: 'civitaextralight_italic';
+}
+.civita-light {
+  font-family: 'civitalight';
+}
+.civita-light-italic {
+  font-family: 'civitalight_italic';
+}
+.civita-italic {
+  font-family: 'civitaitalic';
+}
+.civita-medium {
+  font-family: 'civitamedium';
+}
+.civita-medium-italic {
+  font-family: 'civitamedium_italic';
+}
+.civita-bold {
+  font-family: 'civitabold';
+}
+.civita-bold-italic {
+  font-family: 'civitabold_italic';
+}
+.civita-extrabold {
+  font-family: 'civitaextrabold';
+}
+.civita-extrabold-italic {
+  font-family: 'civitaextrabold_italic';
+}
+
+/*    Pairings    */
+.country {
+  font-family: 'tstarlight';
+  font-size: 42px;
+  text-transform: uppercase;
+}
+h1 {
+  font-family: 'civitamedium_italic';
+  font-size: 36px;
+}
+.h1-class {
+  font-family: 'civita-regularregular';
+  font-size: 26px;
+  text-transform: uppercase;
+}
+h2 {
+  font-family: 'tstarheavy';
+  font-size: 32px;
+}
+.h2-class {
+  font-family: 'tstarlight';
+  font-size: 26px;
+  text-transform: uppercase;
+}
+h3 {
+  font-family: 'tstarregular';
+  font-size: 26px;
+}
+.h3-class {
+  font-family: 'tstarlight';
+  font-size: 21px;
+  text-transform: uppercase;
+}
+h4 {
+  font-family: 'civitamedium_italic';
+  font-size: 24px;
+}
+.image-title-class {
+  font-family: 'civita-regularregular';
+  font-size: 14px;
+  text-transform: uppercase;
+}
+h5 {
+  font-family: 'open_sansbold';
+  font-size: 15px;
+}
+.image-caption-class {
+  font-family: 'open_sansregular';
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.image-caption-title {
+  font-family: 'open_sansbold_italic';
+  font-size: 14px;
+}
+.image-caption-description {
+  font-family: 'open_sansitalic';
+  font-size: 14px;
+}
+.p-class {
+  font-family: 'open_sansregular';
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+/*    Block Quotes    */
+.blockquote-one {
+  font-family: 'open_sansbold';
+  font-size: 36px;
+}
+.blockquote-one-class {
+  font-family: 'tstarlight';
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.blockquote-two {
+  font-family: 'open_sansbold';
+  font-size: 28px;
+}
+.blockquote-two-class {
+  font-family: 'tstarlight';
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+
+
+/*--------------------------------*/
+/*      5. Tables                 */
+/*--------------------------------*/
+th {
+  font-family: 'tstarheavy';
+  font-size: 14px;
+}
+tr {
+  font-family: 'tstarbold';
+  font-size: 14px;
+}
+
+
+
+/*--------------------------------*/
+/*      6. Accordion              */
+/*--------------------------------*/
+.panel-title {
+  font-family: 'tstarbold';
+  font-size: 18px;
+}
+.panel-text {
+  font-family: 'tstarregular';
+  font-size: 16px;
+}
+.panel-title > a {
+  text-decoration: none;
+}
+
+
+
+/*--------------------------------*/
+/*      7. Forms                  */
+/*--------------------------------*/
+legend {
+  font-family: 'tstarbold';
+  font-size: 22.5px;
+}
+.control-label,
+.form-control {
+  font-family: 'tstarbold';
+  font-size: 16px;
+}
+textarea.form-control {
+  font-size: 14px;
+}
+.input-box {
+ font-size: 15px;
+}
+.help-block,
+label {
+  font-family: 'tstarmedium';
+  font-size: 15px;
+}
+.form-control-selects {
+  font-size: 14px;
+}
+label.floating{
+  -webkit-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1);
+ transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1);
+ -webkit-transform: translateY(2em);
+ transform: translateY(2em);
+ display: block;
+ cursor: text;
+ font-size: 1em;
+ color: rgba(0, 0, 0, 0.3);
+}
+label.filled {
+  -webkit-transform: translateX(-1.5em) translateY(-0.2em) scale(.9);
+  transform: translateX(-1.5em) translateY(-0.2em) scale(.9);
+}
+label.focused {
+  color: #3f51b5;
+}
+input.floatInput {
+  -webkit-transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1);
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  border-radius: 0px;
+  font-size: 1em;
+  outline: none;
+  width: 100%;
+  padding-bottom: 0.4em;
+  background:none;
+}
+input.floatInput.form-control:focus {
+  border-color: #ccc;
+  box-shadow:none;
+}
+
+
+
+/*--------------------------------*/
+/*      8. Navs                   */
+/*--------------------------------*/
+
+/*    Tabs    */
+.nav-tabs {
+  font-family: 'tstarbold';
+  font-size: 16px;
+}
+.navs-p {
+  font-size: 12px;
+}
+
+/*    Pills    */
+.nav-pills {
+  font-family: 'tstarbold';
+}
+
+/*    Breadcrumb    */
+.breadcrumb {
+  font-family: 'tstarbold';
+  font-size: 15px;
+}
+
+/*    Pagination    */
+.pagination li a {
+  font-family: 'tstarbold';
+  font-size: 15px;
+}
+.pagination-lg li a {
+  font-family: 'tstarbold';
+  font-size: 19px;
+}
+
+/*    Pager    */
+.pager {
+  font-family: 'tstarbold';
+  font-size: 16px;
+}
+.pager li>a {
+  border-radius: 3px;
+}
+
+
+
+/*--------------------------------*/
+/*      9. Indicators            */
+/*--------------------------------*/
+.label {
+  font-family: 'tstarbold';
+  font-size: 11.25px;
+}
+
+
+
+/*--------------------------------*/
+/*      10. Containers            */
+/*--------------------------------*/
+
+/*    Jumbrotron    */
+.jumbotron {
+  padding: 48px 60px;
+}
+.jumbotron-h1 {
+  font-family: 'tstarmedium';
+  font-size: 74.8px;
+  padding-top: 100px;
+}
+.jumbotron-p {
+  font-family: 'tstarregular';
+  font-size: 32.85px;
+}
+.jumbotron-btn,
+.badge {
+  font-family: 'tstarbold';
+}
+.jumbotron-btn {
+  font-size: 19px;
+}
+
+/*    List Groups    */
+.list-group-item  {
+  font-family: 'tstarmedium';
+  font-size: 15px;
+}
+.list-group-item-heading  {
+  font-family: 'tstarbold';
+  font-size: 19px;
+}
+
+/*    Panels    */
+.panel-heading {
+  font-family: 'tstarbold';
+  font-size: 17px;
+}
+.panel-body,
+.panel-footer {
+  font-family: 'tstarmedium';
+  font-size: 15px;
+}
+
+/*    Wells    */
+.well {
+  font-family: 'tstarmedium';
+  font-size: 15px;
+}
+
+
+
+/*--------------------------------*/
+/*      11. Dialogs               */
+/*--------------------------------*/
+.modal-title {
+  font-family: 'tstarmedium';
+  font-size: 19px;
+}
+.modal-body {
+  font-family: 'tstarmedium';
+  font-size: 15px;
+}
+
+
+
+/*--------------------------------*/
+/*      12. Layout                */
+/*--------------------------------*/
+
+/*    Classification    */
+.classification {
+  background: #E8E8E8;
+  color: #999;
+  font-family: 'tstarbold';
+  font-size: 12px;
+  height: 27px;
+  letter-spacing: 1px;
+  margin: 0px;
+  padding: 7px 5px 5px 5px;
+  text-align: center;
+  width: 100%;
+  z-index: 6001;
+}
+
+/*    Scroll to Top Button    */
+.right {
+  text-align: right;
+}
+.glyphicon-menu-up {
+  border: 0;
+  border-radius: 50px;
+  font-size: 35px;
+  font-weight: bold;
+  padding: 15px;
+}
+.glyphicon-menu-up:focus {
+  outline: none;
+}
+
+/*    Graphic Tables    */
+.story-image {
+  display: block;
+  margin: 0 auto;
+}
+.image-classification {
+  position: absolute;
+  background-color: #231f20;
+  color: white;
+  padding: 6px;
+  z-index: 10;
+  text-transform: uppercase;
+  font-family: 'tstarbold';
+  font-size: 12px;
+}
+.solid-line {
+  border-top: 1px solid black;
+  margin: 0 auto;
+}

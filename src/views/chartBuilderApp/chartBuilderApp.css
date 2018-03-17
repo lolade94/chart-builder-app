@@ -1,0 +1,51 @@
+#chartBuilderApp {
+  margin: 30px auto;
+}
+body{
+  font-family: "arial";
+}
+md-toolbar:not(.md-menu-toolbar){
+  background-color: #E6E7E8;
+  color:#31373f;
+}
+md-toolbar:not(.md-menu-toolbar) h1{
+  color:#31373f;
+  padding-left: 30px;
+  font-weight: 800;
+}
+.md-toolbar-tools{
+  margin-top: 25px;
+}
+#chartModal{
+  width: 800px;
+  margin: 75px auto;
+  height: 320px;
+}
+.chart-modal-image{
+  width: 250px;
+  height: 150px;
+  margin: auto;
+}
+.chart-modal-image img{
+  max-width: 100%;
+}
+.chart-builder-link{
+  width:100%;
+  padding: 25px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.chart-builder-link a{
+  color:#ccc;
+  text-decoration: none;
+}
+.chart-builder-link a:hover{
+  color:#fff;
+}
+.new-chart, .list-charts{
+     padding: 40px;
+     cursor: pointer;
+     margin-right: 30px;
+     background: #31373F;
+     box-shadow: -3px 1px 7px 2px #0a0a0a;;
+}

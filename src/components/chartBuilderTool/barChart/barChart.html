@@ -1,0 +1,194 @@
+<div class="bar-chart" layout="row" >
+
+      <div class="chart-box" flex>
+        <canvas ng-model="vm.bar" id="barChart" class="chart chart-bar" chart-data="vm.data" chart-labels="vm.labels" chart-colors="vm.colors" chart-series="vm.series" chart-dataset-override="vm.datasetOverride" chart-options="vm.options">
+       </canvas>
+        <section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
+          <div class="form-group accord-btn-group">
+            <button ng-click="vm.exportImage()" class="btn export btn-primary"> Export Chart </button>
+            <a ui-sref="chartView" ng-click="vm.submit()" class="btn btn-primary" ui-sref-active="active"> Submit Chart</a>
+          </div>
+        </section>
+      </div>
+      <!--chart-box-->
+
+
+  <div class="content-settings" flex>
+    <h3> Bar Chart</h3>
+    <div class="chart-settings">
+
+      <div class="accordian">
+        <ul class="accordian-menu">
+          <li class="accordian-panel">
+            <h3 class="chart-title"><span class=""></span> Chart Account </h3>
+            <!--Chart Info-->
+            <div class="accord-group chart-info">
+              <div class="form-group">
+                <input class="form-control-file" type="file" id="barfiles" accept='.csv' />
+              </div>
+              <!--form-group-->
+
+              <md-input-container>
+                <label>Designer</label>
+                <input ng-model="vm.designer" type="text" />
+              </md-input-container>
+
+              <md-input-container>
+                <label>Analyst</label>
+                <input ng-model="vm.person" type="text" />
+              </md-input-container>
+
+              <md-input-container>
+                <label>Subject</label>
+                <input ng-model="vm.subject" type="text" />
+              </md-input-container>
+
+              <div class="form-group accord-btn-group">
+                <button ng-click="vm.next($event)" class="btn btn-primary"> Next </button>
+              </div>
+
+            </div>
+            <!--Chart Info-->
+          </li>
+          <li class="accordian-panel">
+            <h3 class="chart-title"><span class=""></span> Chart Title </h3>
+
+            <!--Chart Title-->
+            <div class="accord-group chart-group-title">
+
+              <div class="switch form-group">
+                <input type="checkbox" id="id-name--1" name="set-name" checked="false" class="switch-input" ng-model="vm.displayTitle" ng-click="vm.showTitle(vm.displayTitle)">
+                <label for="id-name--1" class="switch-label">Display Title <span class="toggle--on">On</span><span class="toggle--off">Off</span></label>
+              </div>
+
+              <md-input-container>
+                <label>Chart Title</label>
+                <input ng-model="vm.chartTitle" id="chart-title" class="floatInput form-control" type="text" ng-change="vm.updateChartTitle(vm.chartTitle)" />
+              </md-input-container>
+
+              <md-input-container>
+                <label>Font Color</label>
+                <input ng-model="vm.titleColor" type="text" ng-change="vm.updateTitleColor(vm.titleColor)" />
+              </md-input-container>
+
+
+              <div class="range form-group">
+                <label> Font Size </label>
+                <input ng-model="vm.titleSize" type="range" min="16" max="24" class="form-control" ng-change="vm.updateTitleSize(vm.titleSize)" />
+              </div>
+
+
+              <md-input-container style="margin-right: 10px;">
+                <label>Font Style</label>
+                <md-select ng-model="vm.titleStyle" ng-change="vm.updateTitleStyle(vm.titleStyle)">
+                  <md-option ng-repeat="style in vm.fontStyleOptions" value="{{style}}">{{style}}</md-option>
+                </md-select>
+              </md-input-container>
+
+
+              <md-input-container style="margin-right: 10px;">
+                <label> Position</label>
+                <md-select ng-model="vm.titlePosition" ng-change="vm.updateTitlePosition(vm.titlePosition)">
+                  <md-option ng-repeat="position in vm.positions" value="{{position}}">{{position}}</md-option>
+                </md-select>
+              </md-input-container>
+
+              <div class="form-group accord-btn-group">
+                <button ng-click="vm.previous($event)" class="btn btn-primary"> Previous </button>
+                <button ng-click="vm.next($event)" class="btn btn-primary"> Next </button>
+              </div>
+
+
+            </div>
+            <!--Chart Title-->
+          </li>
+          <li class="accordian-panel">
+
+            <h3 class="chart-title"><span class=""></span>Chart Labels</h3>
+
+            <!--Chart label Group-->
+            <div class="accord-group label-group">
+
+              <div class="switch form-group">
+                <input type="checkbox" id="showLabel" name="set-name" checked="false" class="switch-input" ng-model="vm.displayLabel" ng-click="vm.displayLabels(vm.displayLabel)">
+                <label for="showLabel" class="switch-label">Show Labels <span class="toggle--on">On</span><span class="toggle--off">Off</span></label>
+              </div>
+
+              <md-input-container>
+                <label>X-axis Label</label>
+                <input ng-model="vm.xLabelString" type="text" ng-change="vm.updateXLabel(vm.xLabelString)" />
+              </md-input-container>
+
+              <md-input-container>
+                <label>Y-axis Label</label>
+                <input ng-model="vm.yLabelString" type="text" ng-change="vm.updateYLabel(vm.yLabelString)" />
+              </md-input-container>
+
+              <md-input-container>
+                <label> Font Color </label>
+                <input ng-model="vm.labelColor" type="text" ng-change="vm.updateLabelColor(vm.labelColor)" />
+              </md-input-container>
+
+              <div class="range form-group">
+                <label> Font Size </label>
+                <input ng-model="vm.labelSize" type="range" min="12" max="24" class="form-control" ng-change="vm.updateLabelSize(vm.labelSize)" />
+              </div>
+
+              <md-input-container style="margin-right: 10px;">
+                <label>Font Style</label>
+                <md-select ng-model="vm.labelStyle" ng-change="vm.updateLabelStyle(vm.labelStyle)">
+                  <md-option ng-repeat="style in vm.fontStyleOptions" value="{{style}}">{{style}}</md-option>
+                </md-select>
+              </md-input-container>
+
+
+
+              <div class="form-group accord-btn-group">
+                <button ng-click="vm.previous($event)" class="btn btn-primary"> Previous </button>
+                <button ng-click="vm.next($event)" class="btn btn-primary"> Next </button>
+              </div>
+
+
+            </div>
+            <!--Chart-Label Group-->
+          </li>
+          <li class="accordian-panel">
+
+            <h3 class="chart-title"><span class=""></span> Chart Appearance </h3>
+            <!--Appearance-->
+            <div class="accord-group appearance-group">
+
+              <div class="switch form-group">
+                <input type="checkbox" id="stacked" checked="false" class="switch-input" ng-model="vm.checkStacked" ng-click="vm.checkStackedStatus(vm.checkStacked)">
+                <label for="stacked" class="switch-label">Stacked <span class="toggle--on">On</span><span class="toggle--off">Off</span></label>
+              </div>
+
+              <md-input-container ng-repeat="column in vm.series track by $index">
+                <label>{{vm.series[$index]}} </label>
+                <input ng-model="category" type="text" ng-change="vm.updateBGColor(category, $index)" />
+              </md-input-container>
+
+              <md-input-container ng-repeat="column in vm.series track by $index">
+                <label>{{vm.series[$index]}} Hover </label>
+                <input ng-model="hoverCategory" type="text" ng-change="vm.updateHoverColor(hoverCategory, $index)" />
+              </md-input-container>
+
+
+              <div class="form-group accord-btn-group">
+                <button ng-click="vm.previous($event)" class="btn btn-primary"> Previous </button>
+              </div>
+
+
+            </div>
+            <!--Appearance-->
+          </li>
+        </ul>
+        <!--accordian-menu-->
+      </div>
+      <!--accordian-->
+    </div>
+
+  </div>
+  <!--chart-settings-->
+</div>
+<!--bar-chart row-->

@@ -1,0 +1,33 @@
+<div id="chart-list" class="chart-list-wrapper row" layout="row" layout-xs="column">
+  <section flex="20" class="chartsFilter">
+    <h3> Charts </h3>
+    <div class="chartFilterList">
+     <p ng-repeat="chartType in vm.chartTypes" ng-class="{active: vm.isSelected(chartType)}" ng-click="vm.filterChart(chartType)">
+      {{chartType}}
+    </p>
+   </div>
+  </section>
+  <section class="chartsRow" flex="100" layout="row">
+    <md-list layout="column" flex="100">
+     <md-subheader class="md-primary" >
+      <div layout="row" layout-wrap>
+       <div flex="80"> Charts </div>
+       <div flex="20"> Date </div>
+      </div>
+     </md-subheader>
+      <md-list-item class="md-3-line" ng-repeat="chart in vm.charts | filter: vm.chartSelect">
+        <img ng-src="{{chart.chartLogo}}" class="md-avatar" alt="{{message.who}}">
+        <div class="md-list-item-text"  layout="column" flex="80">
+          <h3>{{chart.chartAccount.subject}}</h3>
+          <h4>{{chart.chartAccount.analyst}}</h4>
+        </div>
+        <div class="md-list-item-text" layout="column" flex="20">
+          <p>
+            {{chart.date | date}}
+          </p>
+        </div>
+      </md-list-item>
+    </md-list>
+
+  </section>
+</div>

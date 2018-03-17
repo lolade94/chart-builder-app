@@ -1,0 +1,65 @@
+.chart-grid-wrapper md-card{
+  padding:20px;
+  background: #31373F;
+  box-shadow: -5px 1px 10px 2px #0a0a0a;
+  color:#fff;
+}
+.chart-grid-wrapper .md-button{
+  text-transform: capitalize;
+  color: grey;
+}
+
+.chart-grid-wrapper md-checkbox.md-checked .md-ink-ripple {
+    color: rgba(112, 228, 239,0.5);
+}
+
+.chart-grid-wrapper md-checkbox.md-checked .md-icon {
+    background-color: rgba(112, 228, 239,0.87);
+}
+
+
+.chart-grid-wrapper md-tabs.md-default-theme md-ink-bar, md-tabs md-ink-bar {
+    color: #70E4EF;
+    background: #70E4EF;
+}
+
+.chart-grid-wrapper md-tabs.md-default-theme .md-tab.md-active,
+ md-tabs .md-tab.md-active {
+  color:#70E4EF;
+}
+
+.chart-grid-wrapper md-tabs.md-default-theme .md-tab, md-tabs .md-tab{
+  color:grey;
+}
+
+.chart-grid-wrapper md-content.md-default-theme, md-content{
+  background-color: transparent;
+}
+.chart-grid-wrapper .col-sm-4{
+   width: 30%
+}
+.chart-grid-wrapper .col-sm-4 .md-button{
+  margin: 6px 0px;
+}
+.chart-grid-wrapper .col-sm-4 .md-button:hover{
+  color:#70E4EF;
+}
+
+.chart-grid-wrapper .img-container{
+  padding-bottom:20px;
+  height: 120px;
+    width: 120px;
+    margin: auto;
+}
+.chart-grid-wrapper img{
+  width: 100%;
+  height: 100%;
+}
+.chart-grid-wrapper .md-subhead{
+  display:block;
+  font-weight:600;
+}
+
+.chart-grid-wrapper .card-icons .fa{
+  font-size:18px;
+}

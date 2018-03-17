@@ -1,0 +1,36 @@
+.accordian .form-control {
+  width: 200px;
+  height: 25px;
+  border-radius: 1px;
+  padding:0px;
+  color:#ccc;
+}
+.accordian .form-row{
+  width: 250px;
+  height: 25px;
+}
+.accordian .form-check.col-md-6{
+  padding-left: 0px;
+}
+.accordian .form-check label{
+  color:#ccc;
+  font-weight: 500;
+}
+.accordian input[type=range]{
+  border:none;
+}
+.accordian .form-group label{
+  font-size: 14px;
+  color:#ccc;
+  font-family: 'Arial';
+  display:block;
+}
+.accordian .accord-btn-group{
+  height:40px;
+}
+.accord-btn-group .btn{
+  margin: 20px 0  0 0;
+}
+.accordian .btn{
+  width: 100px;
+s

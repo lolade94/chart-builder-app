@@ -1,0 +1,123 @@
+<!doctype html>
+    <html ng-app="app">
+        <head>
+            <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+            <meta name="viewport" content="maximum-scale=5, minimum-scale=1, user-scalable=yes width=device-width">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+            <title>ChartBuilder</title>
+
+            <!-- inject:css -->
+            <link rel="stylesheet" href="src/css/normalize.css" />
+
+
+            <!-- base styles -->
+            <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+            <link rel="stylesheet" href="src/css/styles.css" type="text/css" />
+
+            <!-- fonts -->
+            <link rel="stylesheet" href="src/css/font-awesome.css" />
+
+            <!-- injected styles -->
+            <link rel="stylesheet" href="node_modules/angular-ui-bootstrap/dist/ui-bootstrap-csp.css"/>
+            <link rel="stylesheet" href="src/css/dark-globalstyles.css"/>
+
+           <link rel="stylesheet" href="src/views/chartBuilderApp/chartBuilderApp.css"/>
+           <link rel="stylesheet" href="src/components/chartBuilderTool/chartBuilderView/chartBuilder.css"/>
+           <link rel="stylesheet" href="src/components/chartsCatalogList/chartsView/chartsView.css"/>
+
+           <link rel="stylesheet" href="src/components/chartsCatalogList/chartGrid/chartGrid.css"/>
+           <link rel="stylesheet" href="src/components/chartsCatalogList/chartList/chartList.css"/>
+           <link rel="stylesheet" href="src/components/chartBuilderTool/barChart/barChart.css"/>
+           <link rel="stylesheet" href="node_modules/angular-material/angular-material.min.css"/>
+
+            <!-- normalize -->
+        </head>
+
+        <body>
+          <md-toolbar>
+                 <div class="md-toolbar-tools">
+                   <h1>
+                     <span>Chart Builder</span>
+                   </h1>
+                 </div>
+               </md-toolbar>
+            <div ui-view></div>
+
+            <script src="node_modules/jquery/dist/jquery.min.js"></script>
+            <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+            <script src="node_modules/lodash/dist/lodash.min.js"> </script>
+            <script src="node_modules/angular/angular.min.js"></script>
+            <script src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+            <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+            <script src="node_modules/angular-aria/angular-aria.min.js"></script>
+            <script src="node_modules/angular-animate/angular-animate.min.js"></script>
+            <script src="node_modules/angular-messages/angular-messages.min.js"></script>
+            <script src="node_modules/angular-material/angular-material.min.js"></script>
+            <script src="node_modules/angular-file-saver/dist/angular-file-saver.bundle.min.js"></script>
+
+            <script src="node_modules/chart.js/dist/Chart.min.js"></script>
+            <script src="node_modules/angular-chart.js/dist/angular-chart.min.js"></script>
+
+
+            <script src="node_modules/papaparse/papaparse.min.js"> </script>
+
+            <!-- application code -->
+            <script src="app.config.js"></script>
+            <script src="src/services/chart-builder.service.js"></script>
+
+
+            <!--Chart Builder App-->
+            <script src="src/views/chartBuilderApp/chartBuilderApp.config.js"></script>
+            <script src="src/views/chartBuilderApp/chartBuilderApp.controller.js"></script>
+            <!--Chart Builder App -->
+
+             <!--Chart Builder View-->
+            <script src="src/components/chartBuilderTool/chartBuilderView/chartBuilder.module.js"></script>
+            <script src="src/components/chartBuilderTool/chartBuilderView/chartBuilder.component.js"></script>
+            <script src="src/components/chartBuilderTool/chartBuilderView/chartBuilder.controller.js"></script>
+            <!--Chart Builder View-->
+
+            <!--Chart View -->
+            <script src="src/components/chartsCatalogList/chartsView/chartsView.module.js"></script>
+            <script src="src/components/chartsCatalogList/chartsView/chartsView.component.js"></script>
+            <script src="src/components/chartsCatalogList/chartsView/chartsView.controller.js"></script>
+            <!--Chart  View -->
+
+
+            <!--Bar Chart -->
+            <script src="src/components/chartBuilderTool/barChart/barChart.module.js"></script>
+            <script src="src/components/chartBuilderTool/barChart/barChart.component.js"></script>
+            <script src="src/components/chartBuilderTool/barChart/barChart.controller.js"></script>
+            <!--Bar Chart -->
+
+            <!--Pie Chart -->
+            <script src="src/components/chartBuilderTool/pieChart/pieChart.module.js"></script>
+            <script src="src/components/chartBuilderTool/pieChart/pieChart.component.js"></script>
+            <script src="src/components/chartBuilderTool/pieChart/pieChart.controller.js"></script>
+            <!--Pie Chart -->
+
+
+            <!--Chart Grid -->
+            <script src="src/components/chartsCatalogList/chartGrid/chartGrid.module.js"></script>
+            <script src="src/components/chartsCatalogList/chartGrid/chartGrid.component.js"></script>
+            <script src="src/components/chartsCatalogList/chartGrid/chartGrid.controller.js"></script>
+            <!--Chart Grid -->
+
+            <!--Chart List-->
+            <script src="src/components/chartsCatalogList/chartList/chartList.module.js"></script>
+            <script src="src/components/chartsCatalogList/chartList/chartList.component.js"></script>
+            <script src="src/components/chartsCatalogList/chartList/chartList.controller.js"></script>
+            <!--Chart List -->
+
+            <!--Chart Update-->
+            <script src="src/components/chartsCatalogList/updateChart/updateChart.module.js"></script>
+            <script src="src/components/chartsCatalogList/updateChart/updateChart.component.js"></script>
+            <script src="src/components/chartsCatalogList/updateChart/updateChart.controller.js"></script>
+            <!--Chart Update-->
+
+
+            <!--endinject-->
+        </body>
+
+    </html>

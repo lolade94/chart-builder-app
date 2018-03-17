@@ -1,0 +1,18 @@
+<div id="chart-grid" class="chart-grid-wrapper row">
+   <div class="col-sm-4" ng-repeat="chart in vm.charts | orderBy: -chart.date" >
+     <md-card>
+       <div class="img-container" >
+           <img ng-src="{{chart.chartLogo}}" class="md-card-image" alt="Washed Out">
+         </div>
+       <md-card-title-text layout="row" layout-align=" space-between center">
+         <div class="md-subhead"> {{chart.chartAccount.subject}}</div>
+         <div class="md-caption"> {{chart.date| date}} </div>
+        </md-card-title-text>
+
+       <div class="card-icons" layout="row" layout-align=" space-between center">
+         <div class="md-caption"> <i>{{chart.chartAccount.analyst}}</i></div>
+           <a class="md-primary md-button" ui-sref="updateChart({chartId: chart._id})" ui-sref-active="active" > <i class="fa fa-pencil"></i>  Edit</a>
+       </div>
+     </md-card>
+   </div>
+</div>

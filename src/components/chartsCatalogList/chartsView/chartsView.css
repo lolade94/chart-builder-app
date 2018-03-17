@@ -1,0 +1,21 @@
+.chart-view-wrapper{
+  margin-top:20px;
+}
+.chart-view-wrapper [role=button]{
+   outline:none;
+}
+.back-btn{
+  margin-left: 60%;
+  position: absolute;
+  font-weight: 800;
+  font-size: 16px;
+}
+.back-btn:hover{
+  color: #70E4EF;
+  font-weight: 800;
+}
+.back-btn .fa-angle-left {
+  font-size: 16px;
+  padding-right: 10px;
+  font-weight: 800;
+}

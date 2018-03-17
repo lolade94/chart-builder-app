@@ -1,0 +1,732 @@
+/******** DARK THEME - Table of Contents:
+  1.  Global General Styles
+  2.  Color Palette
+  3.  Navbar
+  4.  Buttons
+  5.  Typography
+  6.  Tables
+  7.  Accordion
+  8.  Forms
+  9.  Navs
+  10. Indicators
+  11. Progress Bars
+  12. Containers
+  13. Dialogs
+  14. Layout
+***************************/
+
+
+
+/**** Site Styles ****/
+/*No need to copy these styles to components*/
+
+/*      Titles      */
+.titles,
+.sub-titles,
+.sub-titles-2 {
+  color: #FFFFFF;
+}
+
+
+
+/*--------------------------------*/
+/*   1. Global General Styles     */
+/*--------------------------------*/
+
+body {
+  background-color: #20242A;
+  color: #CCCCCC;
+  font-family: 'open_sansregular';
+  font-size: 16px;
+}
+.header-bg {
+  background-color: #31373F;
+}
+
+
+/*      Classification Bar Header & Footer      */
+h6.classification {
+  background-color: #31373F;
+  color: #999999;
+}
+
+
+/*--------------------------------*/
+/*      2. Color Palette          */
+/*--------------------------------*/
+
+/*    Red    */
+.red-one {
+  background-color: #993730;
+}
+.red-two {
+  background-color: #C5473E;
+}
+.red-three {
+  background-color: #F0564B;
+}
+.red-four {
+  background-color: #F2746B;
+}
+.red-five {
+  background-color: #F6A29C;
+}
+.red-six {
+  background-color: #F9C1BD;
+}
+
+/*    Coral    */
+.coral-one {
+  background-color: #994532;
+}
+.coral-two {
+  background-color: #C45940;
+}
+.coral-three {
+  background-color: #EF6C4D;
+}
+.coral-four {
+  background-color: #F1866D;
+}
+.coral-five {
+  background-color: #F6AE9D;
+}
+.coral-six {
+  background-color: #F9C9BE;
+}
+
+/*    Orange    */
+.orange-one {
+  background-color: #9D552C;
+}
+.orange-two {
+  background-color: #CA6D38;
+}
+.orange-three {
+  background-color: #F68544;
+}
+.orange-four {
+  background-color: #F79B66;
+}
+.orange-five {
+  background-color: #FABC99;
+}
+.orange-six {
+  background-color: #FBD2BB;
+}
+
+/*    Tangerine    */
+.tangerine-one {
+  background-color: #9C642C;
+}
+.tangerine-two {
+  background-color: #C88039;
+}
+.tangerine-three {
+  background-color: #F49C45;
+}
+.tangerine-four {
+  background-color: #F6AE66;
+}
+.tangerine-five {
+  background-color: #F9C999;
+}
+.tangerine-six {
+  background-color: #FBDBBB;
+}
+
+/*    Yellow    */
+.yellow-one {
+  background-color: #9D872C;
+}
+.yellow-two {
+  background-color: #CAAD38;
+}
+.yellow-three {
+  background-color: #F6D344;
+}
+.yellow-four {
+  background-color: #F7DB66;
+}
+.yellow-five {
+  background-color: #FAE799;
+}
+.yellow-six {
+  background-color: #FBEFBB;
+}
+
+/*    Green    */
+.green-one {
+  background-color: #4E843B;
+}
+.green-two {
+  background-color: #64A94C;
+}
+.green-three {
+  background-color: #7ACE5C;
+}
+.green-four {
+  background-color: #92D679;
+}
+.green-five {
+  background-color: #B6E4A6;
+}
+.green-six {
+  background-color: #CEEDC3;
+}
+
+/*    Teal    */
+.teal-one {
+  background-color: #3C825F;
+}
+.teal-two {
+  background-color: #4DA77A;
+}
+.teal-three {
+  background-color: #5ECC95;
+}
+.teal-four {
+  background-color: #7BD5A8;
+}
+.teal-five {
+  background-color: #A7E3C5;
+}
+.teal-six {
+  background-color: #C4ECD8;
+}
+
+/*    Blue    */
+.blue-one {
+  background-color: #27627B;
+}
+.blue-two {
+  background-color: #327E9E;
+}
+.blue-three {
+  background-color: #3C99C1;
+}
+.blue-four {
+  background-color: #5FABCC;
+}
+.blue-five {
+  background-color: #94C7DD;
+}
+.blue-six {
+  background-color: #B8D9E8;
+}
+
+/*    Indigo    */
+.indigo-one {
+  background-color: #463E84;
+}
+.indigo-two {
+  background-color: #5B50A9;
+}
+.indigo-three {
+  background-color: #6E61CE;
+}
+.indigo-four {
+  background-color: #887DD6;
+}
+.indigo-five {
+  background-color: #AFA8E4;
+}
+.indigo-six {
+  background-color: #CAC5ED;
+}
+
+/*    Purple    */
+.purple-one {
+  background-color: #713E86;
+}
+.purple-two {
+  background-color: #9150AC;
+}
+.purple-three {
+  background-color: #B061D1;
+}
+.purple-four {
+  background-color: #BE7DD9;
+}
+.purple-five {
+  background-color: #D3A8E5;
+}
+.purple-six {
+  background-color: #E2C5EE;
+}
+
+/*    Grey    */
+.grey-one {
+  background-color: #333333;
+}
+.grey-two {
+  background-color: #474747;
+}
+.grey-three {
+  background-color: #666666;
+}
+.grey-four {
+  background-color: #858585;
+}
+.grey-five {
+  background-color: #A3A3A3;
+}
+.grey-six {
+  background-color: #C2C2C2;
+}
+
+
+
+/*--------------------------------*/
+/*      3. Navbar                 */
+/*--------------------------------*/
+.navbar-default {
+  background-color: #31373F;
+}
+.btn-basic {
+  background-color: #CBCBCB;
+  border-color: #CBCBCB;
+  color: white;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .active >a,
+.navbar-default .navbar-nav > .active > a:hover {
+  background-color: #5F636A;
+  color: white;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  background-color: #31373F;
+}
+
+
+
+/*--------------------------------*/
+/*      4. Buttons                */
+/*--------------------------------*/
+.btn-primary {
+  background-color: #31373F;
+  border-color: #31373F;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:active:focus,
+.btn.btn-primary.toggle-btn.dropdown-toggle:hover,
+.btn.btn-primary.toggle-btn.dropdown-toggle:active,
+.btn.btn-primary.toggle-btn.dropdown-toggle:focus {
+  background-color: #5F636A;
+  border-color: #5F636A;
+}
+
+
+
+/*--------------------------------*/
+/*      5. Typography             */
+/*--------------------------------*/
+
+/*    Pairings    */
+.country,
+h1,
+.h1-class {
+  color: #EEEEEE;
+}
+h2,
+h3,
+h4 {
+  color: #E6E6E6;
+}
+.h2-class,
+.h3-class,
+.image-title-class,
+.p-class  {
+  color: #B3B3B3;
+}
+h5,
+.image-caption-class {
+  color: #FFFFFF;
+}
+
+/*    Block Quotes    */
+.blockquote-one,
+.blockquote-one-class,
+.blockquote-two,
+.blockquote-two-class {
+  color: #FFFFFF;
+}
+
+
+
+/*--------------------------------*/
+/*      6. Tables                 */
+/*--------------------------------*/
+thead th, thead tr, thead td {
+    background-color: #327e9e!important;
+    color: white;
+}
+.table-striped>tbody>tr:nth-of-type(odd) {
+  background-color: #262a31;
+}
+tr {
+  background-color: #31373f;
+}
+.table-striped>tbody>tr:nth-of-type(odd):hover,
+.table-hover>tbody>tr:hover {
+  background-color: #50545c;
+}
+
+
+
+/*--------------------------------*/
+/*      7. Accordion              */
+/*--------------------------------*/
+.panel-default,
+.panel-group .panel-heading+.panel-collapse>.panel-body {
+  border-color: #5F636A;
+}
+.panel-default > .panel-heading {
+  background-color: #31373F;
+  border: 1px solid #31373F;
+  color: white;
+}
+.panel-body {
+  background-color: #20242A;
+}
+.panel-title {
+  color: #ffffff;
+}
+
+
+
+/*--------------------------------*/
+/*      8. Forms                  */
+/*--------------------------------*/
+.well {
+  background-color: #31373F;
+}
+form,
+legend {
+  color: #E6E6E6;
+}
+.help-block,
+label {
+  color: #ffffff;
+}
+input.form-control,
+textarea.form-control,
+select.form-control {
+  border-color: #484D54;
+}
+.btn.btn-primary.cancel {
+  background-color: #c5473e;
+  border-color: #c5473e;
+}
+.btn.btn-primary.submit {
+  background-color: #64a94c;
+  border-color: #64a94c;
+}
+.has-warning .control-label,
+.has-warning .form-control {
+  color: #c88039;
+  border-color: #c88039;
+}
+.has-error .control-label,
+.has-error .form-control {
+  color: #c5473e;
+  border-color: #c5473e;
+}
+.has-success .control-label,
+.has-success .form-control {
+  color: #64a94c;
+  border-color: #64a94c;
+}
+
+
+
+/*--------------------------------*/
+/*      9. Navs                   */
+/*--------------------------------*/
+
+/*    Tabs    */
+a {
+  color: #5ecc95;
+}
+.nav-tabs > li.active > a,
+.nav .open > a {
+  background-color: transparent;
+  color: white;
+  border-color: #31373F;
+}
+.nav-tabs {
+  border-bottom: 1px solid #31373F;
+}
+.nav > li > a:hover,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus,
+.nav .open > a:hover,
+.nav .open > a:focus,
+.nav-tabs .dropdown-menu {
+  background-color: #31373F;
+  border-color: #31373F;
+  color: white;
+}
+.dropdown-menu .divider {
+  background-color: #5F636A;
+}
+.dropdown-menu > li > a {
+  color: white;
+}
+.dropdown-menu > li > a:hover {
+  background-color: #5F636A;
+}
+
+/*    Pills    */
+.nav-pills > li.active > a {
+  background-color: #5F636A;
+}
+.nav > li > a:hover,
+.nav > li > a:focus,
+.nav-pills > li.active > a:hover,
+.dropdown-menu {
+  background-color: #31373F;
+  color: white;
+}
+
+/*    Breadcrumbs    */
+.breadcrumb {
+  background-color: #31373F;
+}
+.breadcrumb > .active {
+  color: #12AFAC;
+}
+.not-active a {
+  color: #5F636A;
+}
+
+/*    Pagination    */
+.pagination > .active > a,
+.pagination > li > a:hover,
+.pagination > li > a:focus,
+.pagination > .active > a:hover {
+  background-color: #5F636A;
+}
+
+.pagination > .disabled > a,
+.pagination > .disabled > a:hover,
+.pagination > li > a {
+  background-color: #31373F;
+}
+
+.pagination > .active > a,
+.pagination > li > a:hover {
+  background-color: #5F636A;
+}
+
+/*    Pager    */
+.pager li > a {
+  background-color: #31373F;
+}
+.pager .disabled > a,
+.pager li > a:hover {
+  background-color: #5F636A;
+}
+.pager .disabled > a:hover {
+  background-color: #5F636A;
+}
+
+
+
+/*--------------------------------*/
+/*      10. Indicators            */
+/*--------------------------------*/
+
+/*    Labels    */
+.label-default {
+  background-color: #5F636A;
+}
+.label-primary {
+  background-color: #327e9e;
+}
+.label-success {
+  background-color: #64a94c;
+}
+.label-warning {
+  background-color: #c88039;
+}
+.label-danger {
+  background-color: #f03e3e;
+}
+.label-info {
+  background-color: #4da77a;
+}
+
+/*    Badge    */
+.nav-pills > .active > a > .badge {
+  background-color: #31373F;
+  color: white;
+}
+.badge {
+  background-color: #20242A;
+}
+
+
+
+/*--------------------------------*/
+/*      11. Progress Bars         */
+/*--------------------------------*/
+
+.progress {
+  background-color: #31373F;
+}
+
+/*    Basic    */
+.basic-bar {
+  background-color: #D1D3D4;
+}
+
+/*    Contextual Alternatives   */
+.progress-bar-info,
+.progress-bar {
+  background-color: #4da77a;
+}
+.progress-bar-success {
+  background-color: #64a94c;
+}
+.progress-bar-warning {
+  background-color: #c88039;
+}
+.progress-bar-danger {
+  background-color: #f03e3e;
+}
+.progress-striped .active {
+  background-color: #4da77a;
+}
+
+
+
+/*--------------------------------*/
+/*      12. Containers            */
+/*--------------------------------*/
+.jumbotron {
+  background-color: #31373F;
+}
+.jumbotron-btn {
+  background-color: #327e9e;
+  border-color: #327e9e;
+}
+.jumbotron-btn:hover {
+  background-color: #5f636a;
+  border-color: #5f636a;
+}
+
+/*    List Groups   */
+.list-group-item {
+  background-color: transparent;
+  color: #E6E6E6;
+  border-color: #5F636A;
+}
+.list-group-item > .badge {
+  background-color: #5F636A;
+}
+a.list-group-item.active,
+a.list-group-item.active:hover {
+  background-color: #5F636A;
+  border-color: #5F636A;
+}
+a.list-group-item {
+  color: #CCCCCC;
+}
+a.list-group-item .list-group-item-heading {
+  color: white;
+}
+a.list-group-item:hover {
+  background-color: #31373F;
+  border-color: #5F636A;
+  color: #E6E6E6;
+}
+
+/*    Panels   */
+.panel-primary > .panel-heading,
+.panel-primary {
+  background-color: #327e9e;
+  border: 1px solid #327e9e;
+}
+.panel-success > .panel-heading,
+.panel-success {
+  background-color: #64a94c;
+  border: 1px solid #64a94c;
+}
+.panel-warning > .panel-heading,
+.panel-warning {
+  background-color: #c88039;
+  border: 1px solid #c88039;
+}
+.panel-danger > .panel-heading,
+.panel-danger {
+  background-color: #c5473e;
+  border: 1px solid #c5473e;
+}
+.panel-info > .panel-heading,
+.panel-info {
+  background-color: #4da77a;
+  border: 1px solid #4da77a;
+}
+.panel-footer > .panel-heading,
+.panel-footer,
+.panel-heading {
+  background-color: #31373F;
+  color: #E6E6E6;
+  border-color: #31373F;
+}
+
+
+
+/*--------------------------------*/
+/*      13. Dialogs               */
+/*--------------------------------*/
+
+/*    Modal    */
+.modal-header,
+.modal-body {
+  border-bottom: 1px solid #5F636A;
+}
+.modal-content {
+  background-color: #31373F;
+}
+.modal-footer {
+  border-top: 1px solid transparent;
+}
+.close-modal {
+  background-color: #f03e3e;
+  border-color: #f03e3e;
+}
+.save-modal {
+  background-color: #37b24d;
+  border-color: #37b24d;
+  color: white;
+}
+
+
+
+/*--------------------------------*/
+/*      14. Layout                */
+/*--------------------------------*/
+
+/*    Classification    */
+.classification {
+  background-color: #31373F;
+}
+
+/*    Scroll to Top Button    */
+.glyphicon-menu-up {
+  background-color: #31373f;
+}
+.glyphicon-menu-up:hover,
+.glyphicon-menu-up:focus {
+  background-color: #5f636a;
+}
